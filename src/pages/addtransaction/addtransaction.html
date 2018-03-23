@@ -1,0 +1,60 @@
+<!--
+  Generated template for the AddtransactionPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Add transaction</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+
+    <ion-item>
+          <ion-label>Name</ion-label>
+          <ion-select [(ngModel)]="toppings">
+            <ion-option value="nes">NES</ion-option>
+            <ion-option value="n64">Nintendo64</ion-option>
+            <ion-option selected="true" value="psd">PlayStation</ion-option>
+            <ion-option value="genesis">Sega Genesis</ion-option>
+            <ion-option value="saturn">Sega Saturn</ion-option>
+            
+          </ion-select>
+       
+    </ion-item>
+  
+    <ion-item>
+      <ion-label stacked>Transaction Date</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label stacked>Transaction Type</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label stacked>Credit</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label stacked>Debit</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label stacked>Remarks</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+  </ion-list>
+  <div padding>
+    <button ion-button color="primary" block>Save</button>
+  </div>
+</ion-content>
